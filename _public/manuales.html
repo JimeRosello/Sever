@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+	<head>
+		<meta charset="utf-8" /> 
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js.js" ></script>
+		<script> 
+			$(function(){ $("head").load("_layouts/head.html"); 
+						  $("footer").load("_layouts/footer.html")
+						  $("header").load("_layouts/top.html") });
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<header></header>
+		<main>
+			<section>
+				<div class="pagetitle">Manuales</div>
+				<div class="pagetext">
+					 <p>Moreto en Sever</p> 
+					 <a href="./manuales/M3R2.pdf" target="_blank">M3R2</a>
+					 <a href="./manuales/M4R.pdf" target="_blank">M4R</a>
+					 <a href="./manuales/MTR.pdf" target="_blank">MTR</a>
+					 <a href="./manuales/RXMOR.pdf" target="_blank">RXMOR</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+		</footer>
+
+		<img src="images/top.png" id="top" onclick="scrollToTop(300);"/>
+		<section class="hidden" id="panel">
+			<p id="galleryTitle"></p>
+			<table id="gallery">
+				
+			</table>
+		</section>
+
+	</body>
+
+</html> 

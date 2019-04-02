@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+	<head>
+		<meta charset="utf-8" /> 
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js.js" ></script>
+		<script> 
+			$(function(){ $("head").load("_layouts/head.html"); 
+						  $("footer").load("_layouts/footer.html");
+						  $("header").load("_layouts/top.html"); });
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<header></header>
+		<main>
+			<section>
+				<div class="pagetitle">Portones</div>
+				<div class="pagetext">
+					<ul id='navPortones' class='noselect'>
+						<li class='linkPorton' onclick="openPorton('Levadizos')">Levadizos</li>
+						<li class='linkPorton' onclick="openPorton('Batientes')">Batientes</li>
+						<li class='linkPorton' onclick="openPorton('Corredizos')">Corredizos</li>
+						<li class='linkPorton' onclick="openPorton('Guillotina')">Guillotina</li>
+					</ul> 
+					<hr/>
+				</div>
+				<div id="containerPorton"></div> 
+				<p id="viewPhotos" onclick="goTo('panel')" class="noselect">Ver fotos</p>
+			</section>
+		</main>
+
+		<footer>
+		</footer>
+
+		<img src="images/top.png" id="top" onclick="scrollToTop(300);"/>
+		<section class="hidden" id="panel">
+
+			<p id="galleryTitle"></p>
+			<table id="gallery">
+				<tr>
+					<th></th>
+					<th></th> 
+					<th></th>
+				</tr>
+			</table>
+		</section>
+
+	</body>
+
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+	<head>
+		<meta charset="utf-8" /> 
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js.js" ></script>
+		<script> 
+			$(function(){ $("head").load("_layouts/head.html"); 
+						  $("footer").load("_layouts/footer.html")
+						  $("header").load("_layouts/top.html") });
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<header></header>
+		<main>
+			<section>
+				<div class="pagetitle">Contacto</div>
+				<div class="pagetext">
+					<div align="center" class="contactText"><!--<p><img src="images/whatsapp.png" class="contact"/>11 4090 9465</p>--><p><img src="images/mail.png" class="contact"/><a style="color:black; text-decoration: none;"href="mailto:contacto@elias.com.ar">info@sever.com.ar</a></p></div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+		</footer>
+
+		<img src="images/top.png" id="top" onclick="scrollToTop(300);"/>
+		<section class="hidden" id="panel">
+			<p id="galleryTitle"></p> 
+			<table id="gallery">
+				
+			</table>
+		</section>
+
+	</body>
+
+</html> 

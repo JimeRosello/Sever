@@ -1,0 +1,307 @@
+body { 
+	font-family: 'Abel', sans-serif; 
+	font-size: 18px;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-image: url('images/black.png');
+	background-repeat: repeat;
+}
+
+::selection {
+  background: rgb(255,255,255);
+}
+::-moz-selection {
+  background: rgb(255,255,255);
+}
+
+.noselect {
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-khtml-user-select: none; 
+	-moz-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+nav { 
+	margin-top: 2vh;
+	font-size: 0.7em;
+}
+
+header {
+	margin-top: 2vh;
+	margin-left: 2vw;
+	color: white;
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+header, nav { 
+	align-self: left; 
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cabecera {
+	margin: 0;
+}
+
+#elias1 { 
+	font-family: Helvetica; 
+	font-size: 3.6em;
+	color: rgb(26, 111, 173);
+	margin-bottom: -0.2em;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#elias2 { 
+	font-family: Helvetica; 
+	font-size: 2.4em; 
+	color: rgb(26, 111, 173);
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#portonesLogo { 
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+
+#logo {
+	letter-spacing: 0.9em;
+	margin-bottom: -0.7em;
+}
+
+ul, li { 
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button {
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: #b2b2b2;
+	padding: 1em;
+	text-decoration: none;
+	border-radius: 1em;
+	-webkit-transition: color 0.3s ease-out;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: #91eeff; /*rgba(255,255,255, 0.8);*/
+	-webkit-transition: color 0.3s ease-in;
+}
+
+li {
+	height: 100%;
+}
+
+main {
+	color: black;
+	border: 4px solid black;
+	background-image: url('images/background_fir.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	width: 105vw;
+	box-shadow: 0px 0px 40px rgba(0,0,0,0.8); 
+	margin-left: -1em;
+	margin-right: -1em;
+	min-height: 55vh;
+	margin-top: 5vh;
+	padding-top: 6vh; 
+	padding-bottom: 4vh; 
+	align-content: center;
+	vertical-align: middle;
+	-webkit-transition: background-image 0.5s ease-in;
+}
+
+section {
+	/*background: rgba(114, 217, 255, 0.7); */ 
+	background: rgba(98, 161, 219, 0.7); 
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	height: 100%; 
+	vertical-align: middle;
+	-webkit-transition: opacity 0.5s ease-in;
+	width: 80vw; 
+	padding: 0.6em 1em 0.3em 1em;
+	margin: auto;
+	min-height: 200px; 
+}
+
+section, .pagetext { 
+	height: auto;
+	border-radius: 3em;
+	vertical-align: middle;
+}
+
+.pagetitle {
+	opacity: 0; 
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	-webkit-transition: opacity 0.5s ease-in;
+	width: 100%; 
+}
+
+.pagetext { 
+	padding-top: 0.5em;
+	margin-bottom: 0.5em;
+	opacity: 0; 
+	width: 90%;
+	height: auto; 
+	text-align: justify;
+	margin: auto;
+	vertical-align: middle;
+	-webkit-transition: opacity 0.5s ease-in;
+}
+
+footer {
+	color: #EEEEEE;
+	opacity: 1; 
+	text-align: center;
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+	-webkit-transition: opacity 0.2s ease-out;
+}
+
+.contact {
+	width: 1em;
+	margin-right: 1vw;
+	vertical-align: middle;
+}
+
+.contactText {
+	min-width: auto; 
+	max-width: 11em;
+	margin: auto;
+	text-align: left;
+}
+
+#panel {
+	opacity: 0; 
+	background: rgba(98, 161, 219, 0.7);
+	-webkit-transition: opacity 0.2s ease-in;
+	height: 90vh;
+}
+
+#galleryTitle {
+	font-size: 2em;
+	margin-top: -0.1em;
+	margin-left: 0.2em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+}
+
+#gallery {
+	background: url("images/panel.jpg");
+	background-size: cover;	
+	background-attachment: fixed;
+	z-index: 1000; 
+}
+
+#top { 
+	position: sticky;
+	left: 95vw;
+	top: 85vh;
+	width: 5em;
+	cursor: pointer;
+	opacity: 0; 
+	-webkit-transition: opacity 0.3s ease-in;
+}
+
+ul li.linkPorton {
+	align-content: center;
+	margin-right: 1em;
+	text-transform: uppercase;
+}
+
+.linkPorton {
+	cursor: pointer;
+	font-weight: bold;
+	-webkit-transition: color 0.2s ease-in;
+}
+
+.linkPorton:hover {
+	color: rgb(255,255,255);
+	-webkit-transition: color 0.2s ease-in;
+}
+
+#containerPorton {
+	color: white;
+	background: rgba(0, 0, 0, 0.6); 
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); 
+	border-radius: 0 0 0.7em 0.7em; 
+	padding: 1.3em; 
+	opacity: 0;
+	height: auto; 
+	font-weight: bold;
+	margin: auto;
+	margin-top: -2.5em;
+	margin-bottom: 2em;
+	width: 85%;
+	font-size: 0.8em;
+	text-align: justify;
+	-webkit-transition: opacity 0.3s ease-in;
+}
+
+hr {
+	opacity: 0;
+	border-color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: opacity 0.3s ease-in;
+	margin-top: -0.5em;
+	margin-bottom: 2em;
+}
+
+#viewPhotos {
+	text-align: center;
+	width: 4em;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background: rgba(0,0,0,0.4);
+	color: white;
+	font-weight: bold;
+	margin: auto;
+	cursor: pointer;
+	opacity: 0; 
+	-webkit-transition: opacity 0.3s ease-in;
+	-webkit-transition: background 0.3s ease-in;
+	visibility: hidden; 
+}
+
+#viewPhotos:hover {
+	background: rgba(0,0,0,0.2);
+	-webkit-transition: background 0.3s ease-in;
+}
+
+.servicioTecn {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: -0.6em;
+}
+
+td {
+	font-size: 0.8em;
+	width: 15vw;
+	padding: .5em;
+	vertical-align: top;
+	text-align: center; 
+
+}
+
+th {
+	text-transform: uppercase;
+	text-align: center; 
+	vertical-align: top;
+}
+
+#navPortones {
+	width: 100%; 
+	text-align: center; 
+}
+
+.footerMail a {
+	color: rgb(26, 111, 173);
+}

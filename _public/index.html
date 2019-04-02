@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+	<head>
+		<meta charset="utf-8" /> 
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js.js" ></script>
+		<script> 
+			$(function(){ $("head").load("_layouts/head.html"); 
+						  $("footer").load("_layouts/footer.html")
+						  $("header").load("_layouts/top.html") });
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<header></header>
+		<main>
+			<section>
+				<div class="pagetitle">Home</div>
+				<div class="pagetext">
+					<p>Sever es una empresa con personal de alta calificación técnica, con más de 40 años de experiencia en portones automáticos.</p><p>En su staff podrá contar con las respuestas para todo tipo de automatizaciones.</p><p>Estamos especialmente orientados a trabajos “A medida”. Por ello podemos adaptarnos, de modo flexible, a diseños a proposición de los profesionales.</p></p>
+				</div>
+				<div id="containerPorton"></div>
+				<p id="viewPhotos" onclick="goTo('panel')" class="noselect">Ver fotos</p>
+			</section>
+		</main>
+
+		<footer>
+		</footer>
+
+		<img src="images/top.png" id="top" onclick="scrollToTop(300);"/>
+		<section class="hidden" id="panel">
+			<p id="galleryTitle"></p>
+			<table id="gallery">
+				
+			</table>
+		</section>
+
+	</body>
+
+</html> 
